@@ -1,5 +1,19 @@
 const reset = document.querySelector('#reset');
 let gridSize = 16
+
+const sChange = document.querySelector('.change-size');
+
+function sizeChange(){
+    const size = document.querySelector('.size').value;
+    if(size > 16){
+        alert('Size cannot be larger than 16');
+    }
+    else{
+        gridSize = size;
+        resetGrid();
+    }
+}
+
 function createGrid(){
     const parent = document.querySelector('.box');
 
@@ -32,3 +46,4 @@ function resetGrid(){
 
 
 reset.addEventListener('click', resetGrid);
+sChange.addEventListener('click', sizeChange);

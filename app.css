@@ -17,17 +17,13 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 802px;
-    height: 802px;
-    max-width: 802px;
-    max-height: 802px;
-    min-width: 802px;
-    min-height: 802px;
     padding: 0;
     margin: 0;
+    justify-content: center;
+    max-width: 805px;
+    
 }
 .col-e{
-    display: flex;
     max-width: 50px;
     max-height: 50px;
     min-height: 50px;
@@ -40,6 +36,7 @@ body{
 .row-e{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .col {
     text-align: center !important;
